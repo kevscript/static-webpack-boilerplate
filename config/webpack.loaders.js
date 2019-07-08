@@ -81,21 +81,6 @@ const sass = {
   ],
 };
 
-const less = {
-  test: /\.less$/,
-  use: [
-    config.env === 'production' ? MiniCssExtractPlugin.loader : styleLoader,
-    cssLoader,
-    postcssLoader,
-    {
-      loader: 'less-loader',
-      options: {
-        sourceMap,
-      },
-    },
-  ],
-};
-
 // Image loaders
 const imageLoader = {
   loader: 'image-webpack-loader',
@@ -160,7 +145,6 @@ module.exports = [
   js,
   css,
   sass,
-  less,
   images,
   fonts,
   videos,

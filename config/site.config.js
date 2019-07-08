@@ -15,7 +15,7 @@ const config = {
   site_description: 'A modern boilerplate for static website development',
 
   // Your website's URL, used for sitemap
-  site_url: '',
+  site_url: 'http://kevinostafinski.com',
 
   // Google Analytics tracking ID (leave blank to disable)
   googleAnalyticsUA: '',
@@ -41,7 +41,7 @@ const config = {
     dist: 'dist',
   },
   package: JSON.parse(
-    fs.readFileSync(path.join(ROOT, '/package.json'), { encoding: 'utf-8' }),
+    fs.readFileSync(path.join(ROOT, '/package.json'), { encoding: 'utf-8' })
   ),
 };
 
